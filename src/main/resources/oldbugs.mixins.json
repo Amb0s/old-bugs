@@ -1,14 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "eosl.nostalgic_bugs.features",
+  "package": "turniplabs.oldbugs.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "BoatWaterLift",
-    "LadderGaps",
-    "MinecartBooster",
-    "OldFireSpread",
-    "SouthEastRuleForLiquids"
+    "BlockFireMixin",
+    "EntityBoatMixin",
+    "EntityLivingMixin",
+    "EntityMinecartMixin",
+    "EntityMixin"
   ],
   "client": [],
   "injectors": {

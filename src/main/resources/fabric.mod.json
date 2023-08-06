@@ -1,24 +1,27 @@
 {
     "schemaVersion": 1,
-    "id": "nostalgic_bugs",
+    "id": "oldbugs",
     "version": "${version}",
-    "name": "Minecart BTA Nostalgic Bugs Mod",
-    "description": "Returns a few old beta minecart bugs.",
-    "authors": ["eosl"],
+    "name": "Old Bugs",
+    "description": "Brings back bugs from older Minecraft versions.",
+    "authors": [
+        "eosl",
+        "Ambos"
+    ],
     "contact": {
-        "homepage": "",
-        "sources": "https://github.com/EOfSL/bta-old-nostalgic-bugs",
-        "steam": "https://steamcommunity.com/id/true_eosl/"
+        "homepage": "https://github.com/Turnip-Labs/",
+        "sources": "https://github.com/Turnip-Labs/old-bugs",
+        "issues": "https://github.com/Turnip-Labs/old-bugs/issues"
     },
     "license": "CC0-1.0",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "eosl.nostalgic_bugs.NostalgicBugsMod"
+            "turniplabs.oldbugs.OldBugs"
         ]
     },
     "mixins": [
-      "nostalgic_bugs.mixins.json"
+        "oldbugs.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=0.13.3"
