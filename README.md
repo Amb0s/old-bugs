@@ -7,6 +7,10 @@
 * Water ladders
 * Fast and infinite fire spreading
 
-## Thanks
+## Instructions
+Check the [BTA! modding wiki page](https://bta.miraheze.org/wiki/Modding)
+
+
+## Credits
 [eosl](https://github.com/EOfSL), for his [mod](https://github.com/EOfSL/bta-old-nostalgic-bugs).
 
