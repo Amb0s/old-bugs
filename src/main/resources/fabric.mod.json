@@ -9,9 +9,9 @@
         "Ambos"
     ],
     "contact": {
-        "homepage": "https://github.com/Turnip-Labs/",
-        "sources": "https://github.com/Turnip-Labs/old-bugs",
-        "issues": "https://github.com/Turnip-Labs/old-bugs/issues"
+        "homepage": "https://memoryshards.xyz",
+        "sources": "https://github.com/amb0s/old-bugs",
+        "issues": "https://github.com/amb0s/old-bugs/issues"
     },
     "license": "CC0-1.0",
     "icon": "icon.png",
