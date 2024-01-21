@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
 @Mixin(value = EntityBoat.class, remap = false)
 final class EntityBoatMixin {
-	@ModifyConstant(method = "tick", constant = @Constant(doubleValue = 1.0, ordinal = 1))
-	private double change(double d) {
-			return Double.MAX_VALUE;
-	}
+    @ModifyConstant(method = "tick", constant = @Constant(doubleValue = 1.0, ordinal = 1))
+    private double change(double d) {
+        return Double.MAX_VALUE;
+    }
 }

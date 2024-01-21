@@ -10,13 +10,13 @@ import net.minecraft.core.util.phys.AABB;
 
 @Mixin(value = Entity.class, remap = false)
 final class EntityMixin {
-	@Inject(method = "checkAndHandleWater", at = @At("HEAD"), cancellable = true)
-	private void onCheckAndHandleWater(CallbackInfoReturnable<Boolean> cir) {
-		Entity self = ((Entity) ((Object) this));
+    @Inject(method = "checkAndHandleWater", at = @At("HEAD"), cancellable = true)
+    private void onCheckAndHandleWater(CallbackInfoReturnable<Boolean> cir) {
+        Entity self = ((Entity) ((Object) this));
 
-		AABB aabb = self.bb.expand(0.0, -0.4000000059604645, 0.0);
-		boolean res = self.world.handleMaterialAcceleration(aabb, Material.water, self);
+        AABB aabb = self.bb.expand(0.0, -0.4000000059604645, 0.0);
+        boolean res = self.world.handleMaterialAcceleration(aabb, Material.water, self);
 
-		cir.setReturnValue(res);
-	}
+        cir.setReturnValue(res);
+    }
 }
