@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "turniplabs.oldbugs.mixin",
+  "package": "ambos.oldbugs.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "BlockFireMixin",

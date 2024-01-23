@@ -1,4 +1,4 @@
-package turniplabs.oldbugs.mixin;
+package ambos.oldbugs.mixin;
 
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockFire;

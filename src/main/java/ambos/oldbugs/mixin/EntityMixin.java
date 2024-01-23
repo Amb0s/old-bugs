@@ -1,4 +1,4 @@
-package turniplabs.oldbugs.mixin;
+package ambos.oldbugs.mixin;
 
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.entity.Entity;

@@ -18,7 +18,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "turniplabs.oldbugs.OldBugs"
+            "ambos.oldbugs.OldBugs"
         ]
     },
     "mixins": [

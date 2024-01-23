@@ -1,4 +1,4 @@
-package turniplabs.oldbugs;
+package ambos.oldbugs;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
