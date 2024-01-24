@@ -11,7 +11,7 @@ import ambos.oldbugs.OldBugs;
 final class EntityMinecartMixin {
     @ModifyVariable(method = "push", at = @At(value = "STORE"), ordinal = 6)
     private double change(double d6) {
-        if (OldBugs.MINECART_BOOSTER) {
+        if (OldBugs.MINECART_BOOSTERS) {
             return 0;
         } else {
             return d6;

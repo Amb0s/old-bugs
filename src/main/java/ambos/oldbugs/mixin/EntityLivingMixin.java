@@ -14,7 +14,7 @@ import ambos.oldbugs.OldBugs;
 final class EntityLivingMixin {
     @Inject(method = "canClimb", at = @At("HEAD"), cancellable = true)
     public void increaseLadderCoverage(CallbackInfoReturnable<Boolean> cir) {
-        if (!OldBugs.LADDER_GAP) {
+        if (!OldBugs.LADDERS_GAPS) {
             return;
         }
 

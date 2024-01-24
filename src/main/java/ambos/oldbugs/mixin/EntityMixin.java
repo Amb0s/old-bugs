@@ -14,7 +14,7 @@ import ambos.oldbugs.OldBugs;
 final class EntityMixin {
     @Inject(method = "checkAndHandleWater", at = @At("HEAD"), cancellable = true)
     private void onCheckAndHandleWater(CallbackInfoReturnable<Boolean> cir) {
-        if (!OldBugs.SOUTH_EAST_RULE_LIQUIDS) {
+        if (!OldBugs.SOUTH_WEST_RULE_LIQUIDS) {
             return;
         }
 
@@ -26,7 +26,7 @@ final class EntityMixin {
 
     @Inject(method = "isInLava", at = @At("HEAD"), cancellable = true)
     private void lavaInject(CallbackInfoReturnable<Boolean> cir){
-        if (!OldBugs.SOUTH_EAST_RULE_LIQUIDS) {
+        if (!OldBugs.SOUTH_WEST_RULE_LIQUIDS) {
             return;
         }
 

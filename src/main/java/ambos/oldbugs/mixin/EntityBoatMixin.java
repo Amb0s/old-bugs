@@ -11,7 +11,7 @@ import ambos.oldbugs.OldBugs;
 final class EntityBoatMixin {
     @ModifyConstant(method = "tick", constant = @Constant(doubleValue = 1.0, ordinal = 1))
     private double change(double d) {
-        if (OldBugs.BOAT_WATER_LIFT) {
+        if (OldBugs.BOAT_ELEVATORS) {
             return Double.MAX_VALUE;
         } else {
             return d;
