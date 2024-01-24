@@ -8,11 +8,16 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import ambos.oldbugs.OldBugs;
 
 @Mixin(value = EntityLiving.class, remap = false)
 final class EntityLivingMixin {
     @Inject(method = "canClimb", at = @At("HEAD"), cancellable = true)
     public void increaseLadderCoverage(CallbackInfoReturnable<Boolean> cir) {
+        if (!OldBugs.LADDER_GAP) {
+            return;
+        }
+
         EntityLiving self = ((EntityLiving) ((Object) this));
 
         int x = MathHelper.floor_double(self.x);

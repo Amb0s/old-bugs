@@ -5,10 +5,16 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
+import ambos.oldbugs.OldBugs;
+
 @Mixin(value = EntityBoat.class, remap = false)
 final class EntityBoatMixin {
     @ModifyConstant(method = "tick", constant = @Constant(doubleValue = 1.0, ordinal = 1))
     private double change(double d) {
-        return Double.MAX_VALUE;
+        if (OldBugs.BOAT_WATER_LIFT) {
+            return Double.MAX_VALUE;
+        } else {
+            return d;
+        }
     }
 }
