@@ -3,7 +3,7 @@
     "id": "oldbugs",
     "version": "${version}",
     "name": "Old Bugs",
-    "description": "Brings back bugs from older Minecraft versions.",
+    "description": "Brings back bugs from older versions.",
     "authors": [
         "eosl",
         "Ambos"
