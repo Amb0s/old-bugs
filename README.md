@@ -18,4 +18,4 @@ Check the [BTA! modding wiki page](https://bta.miraheze.org/wiki/Modding)
 
 ## Copyright
 
-[Phoenotopia Awakening](https://phoenotopia.com/) and [The Guided Fate Paradox}(https://nippon1.jp/consumer/kamipara/) for the mod icon assets.
+[Phoenotopia Awakening](https://phoenotopia.com/) and [The Guided Fate Paradox](https://nippon1.jp/consumer/kamipara/) for the mod icon assets.
